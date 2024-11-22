@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, #020202, #050505);
+  font-family: "Orbitron";
+}
+
+h3 {
+  margin: 0;
+}
+
+#main-content {
+  opacity: 0;
+}
+
+/* Fundo interativo */
+/* Fundo interativo */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  z-index: -1; /* Mantém o fundo atrás */
+  background: radial-gradient(circle, #020202, #050505);
+}
+
+/* Camada superior */
+.container-top {
+  width: 100%;
+  height: 90vh;
+  gap: 10%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000005e;
+  pointer-events: none; /* Deixa os eventos passarem para o fundo */
+}
+
+.container-top h3 {
+  font-size: 3rem;
+  color: white;
+  text-align: start;
+  pointer-events: auto; /* O texto será interativo */
+}
+.container-top p {
+  color: white;
+  text-align: center;
+  text-align: justify;
+  width: 550px;
+  pointer-events: auto; /* O texto será interativo */
+}
+
+/* projetos */
+
+.container-projects {
+  width: 100%;
+  height: 90vh;
+  background-color: rgb(0, 0, 0);
+}
+
+.container-cards1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5%;
+  gap: 5%;
+}
+
+.container-cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.titulo-projects {
+  text-align: center;
+  color: white;
+}
+
+/* From Uiverse.io by D3OXY */
+.card {
+  position: relative;
+  width: 350px;
+  aspect-ratio: 16/9;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 10px;
+  font-size: 12px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.card__button {
+  padding: 15px;
+  border-radius: 8px;
+  background: #777;
+  border: none;
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  color: #777;
+  border: 1px solid #777;
+}
