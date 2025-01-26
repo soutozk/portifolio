@@ -56,19 +56,20 @@ main {
 .carroseul-icons {
   width: 100%;
   height: 10vh;
-  gap: 45px;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #38383894;
   background-color: #00000075;
 }
 
 .icon {
   display: flex;
   gap: 45px;
-  animation: scroll 10s linear infinite;
+}
+
+.icon i {
+  font-size: 50px;
+  color: #38383894;
 }
 
 @keyframes fadeInUp {
@@ -90,17 +91,6 @@ main {
   to {
     transform: translate3d(0, 0, 0);
     opacity: 1;
-  }
-}
-
-/* animação carrosel  */
-
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
   }
 }
 
