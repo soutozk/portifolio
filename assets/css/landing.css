@@ -81,6 +81,7 @@ main {
   justify-content: center;
   flex-direction: column;
   background-color: #111111;
+  margin-bottom: 5vh;
 }
 
 .projects-title {
