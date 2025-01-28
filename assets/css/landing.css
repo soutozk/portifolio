@@ -15,6 +15,7 @@ body {
   z-index: 1;
   opacity: 1; /* Inicialmente visível */
   transition: opacity 1s ease-out; /* Transição de opacidade para desaparecer */
+  overflow: hidden;
 }
 
 svg {
