@@ -191,7 +191,7 @@ main {
 
 h2 {
   font-size: 2rem;
-  color: #707070;
+  color: #aaaaaa;
 }
 
 ul {
@@ -209,7 +209,7 @@ ul li {
 ul li i {
   margin-right: 0.5rem;
   font-size: 20px;
-  color: #4a8ccf; /* Ícones em azul */
+  color: #aaaaaa; /* Ícones em azul */
 }
 
 .social-links {
@@ -229,7 +229,7 @@ ul li i {
 }
 
 h3 {
-  color: #707070;
+  color: #aaaaaa;
   margin-right: 0.8rem;
 }
 
