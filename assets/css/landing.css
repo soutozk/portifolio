@@ -55,6 +55,16 @@ main {
   color: white;
 }
 
+.text-home-top h1 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.text-home-top p {
+  font-size: 32px;
+  margin: 0;
+}
+
 .carroseul-icons {
   width: 100%;
   height: 10vh;

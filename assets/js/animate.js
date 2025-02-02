@@ -7,13 +7,17 @@ gsap.to("text", {
 });
 
 setTimeout(function () {
-  document.querySelector(".start-animation").style.transition =
-    "opacity 1s ease-out";
-  document.querySelector(".start-animation").style.opacity = 0; // Esconde a animação inicial suavemente
-}, 2500); // Tempo igual à duração da animação do contorno 2500
+  const startAnimation = document.querySelector(".start-animation");
+  const footer = document.querySelector("footer");
+
+  startAnimation.style.transition = "opacity 1s ease-out";
+  startAnimation.style.opacity = 0;
+}, 2500); // Tempo igual à duração da animação do contorno
 
 setTimeout(function () {
-  document.querySelector(".start-animation").style.display = "none"; // Esconde a animação após a transição
-  document.querySelector(".container-home").style.display = "flex"; // Exibe a nova seção
-  document.querySelector(".container-home").style.opacity = 1; // Torna visível a nova seção
-}, 3000); // Aguarda a animação de contorno ser concluída 3000
+  document.querySelector(".start-animation").style.display = "none"; // Esconde a animação
+  document.querySelector(".container-home").style.display = "flex";
+  document.querySelector("footer").style.display = "flex"; // Reexibe o footer
+
+  document.querySelector(".container-home").style.opacity = 1;
+}, 3000);
