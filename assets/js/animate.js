@@ -8,11 +8,9 @@ gsap.to("text", {
 
 setTimeout(function () {
   const startAnimation = document.querySelector(".start-animation");
-  const footer = document.querySelector("footer");
-
   startAnimation.style.transition = "opacity 1s ease-out";
   startAnimation.style.opacity = 0;
-}, 2500); // Tempo igual à duração da animação do contorno
+}, 3000); // Tempo igual à duração da animação do contorno
 
 setTimeout(function () {
   document.querySelector(".start-animation").style.display = "none"; // Esconde a animação

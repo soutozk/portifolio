@@ -26,10 +26,14 @@
       <div class="container-top animated animatedFadeInUp fadeInUp">
         <div class="text-home-top">
           <h1>Gabriel Souto</h1>
-          <p>sssssssssssssss</p>
+          <p>
+            Hello World! dolor sit amet consectetur adipisicing elit. Non in vel
+            eaque omnis accusamus. Qui omnis vero iste voluptatem nobis officia!
+            Atque iusto sapiente natus dicta a eum consectetur beatae?
+          </p>
         </div>
         <div class="image-top-home">
-          <img src="https://placehold.co/400" alt="" />
+          <img src="https://placehold.co/350" alt="" />
         </div>
       </div>
 
@@ -58,10 +62,10 @@
             <img src="/assets/img/bibliavirtual.png" alt="Imagem do Projeto" />
             <h2>Bíblia Virtual</h2>
             <div class="card-buttons">
-              <button>Detalhes</button>
-              <a href="https://bibliavirtual.netlify.app"
-                ><button>Visualizar</button></a
-              >
+              <button onclick="openModal('1')">Detalhes</button>
+              <a href="https://bibliavirtual.netlify.app" target="_blank">
+                <button>Visualizar</button>
+              </a>
             </div>
           </div>
           <!-- Card 2 -->
@@ -69,7 +73,7 @@
             <img src="/assets/img/asstj.png" alt="Imagem do Projeto" />
             <h2>Site Institucional - ASSTJ (Participação)</h2>
             <div class="card-buttons">
-              <button>Detalhes</button>
+              <button onclick="openModal('2')">Detalhes</button>
               <a href="https://asstj.netlify.app/"
                 ><button>Visualizar</button></a
               >
@@ -81,9 +85,9 @@
               src="https://via.placeholder.com/150"
               alt="Imagem do Projeto"
             />
-            <h2>Título do Projeto</h2>
+            <h2>Sistema de Gestão</h2>
             <div class="card-buttons">
-              <button>Detalhes</button>
+              <button onclick="openModal('3')">Detalhes</button>
               <a href=""><button>Visualizar</button></a>
             </div>
           </div>
@@ -93,20 +97,15 @@
               src="https://via.placeholder.com/150"
               alt="Imagem do Projeto"
             />
-            <h2>
-              Site Institucional<br />
-              Faculdade Elohin
-            </h2>
+            <h2>Site Institucional Faculdade Elohin</h2>
             <div class="card-buttons">
-              <button>Detalhes</button>
+              <button onclick="openModal('4')">Detalhes</button>
               <a href="https://faculdadeelohin.netlify.app/"
                 ><button>Visualizar</button></a
               >
             </div>
           </div>
           <!-- Card 5 -->
-
-          <!-- Card 6 -->
           <div class="card">
             <img
               src="https://via.placeholder.com/150"
@@ -114,10 +113,11 @@
             />
             <h2>Secret Word Game</h2>
             <div class="card-buttons">
-              <button>Detalhes</button>
+              <button onclick="openModal('5')">Detalhes</button>
               <a href=""><button>Visualizar</button></a>
             </div>
           </div>
+          <!-- Card 6 -->
           <div class="card">
             <img
               src="/assets/img/linktreecerradoo.png"
@@ -125,10 +125,23 @@
             />
             <h2>Linktree - Faculdade Cerrado</h2>
             <div class="card-buttons">
-              <button>Detalhes</button>
+              <button onclick="openModal('6')">Detalhes</button>
               <a href="https://faculdadecerrado.netlify.app/"
                 ><button>Visualizar</button></a
               >
+            </div>
+          </div>
+        </div>
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="Imagem do Projeto" />
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <div id="modal-techs" class="tech-icons"></div>
+            <div class="modal-links">
+              <a id="modal-deploy" href="#" target="_blank">💻 Visualizar</a>
+              <a id="modal-github" href="#" target="_blank">🔗 GitHub</a>
             </div>
           </div>
         </div>
@@ -224,6 +237,7 @@
     </footer>
     <script src="/assets/js/animate.js"></script>
     <script src="/assets/js/carrosel.js"></script>
-    <script src="/assets/js/modal.js"></script>
+    <script src="/assets/js/modal-project.js"></script>
+    <script src="/assets/js/modal-contact.js"></script>
   </body>
 </html>
