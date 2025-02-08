@@ -345,6 +345,11 @@ h3 {
   gap: 20px;
 }
 
+#modal-description{
+  white-space: pre-line;
+
+}
+
 .modal-links a {
   text-decoration: none;
   font-weight: bold;

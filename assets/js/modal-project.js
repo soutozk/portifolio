@@ -4,11 +4,12 @@ const projetos = {
     titulo: "Bíblia Virtual",
     imagem: "/assets/img/bibliavirtual.png",
     descricao:
-      "Um site interativo que permite acessar e pesquisar versículos bíblicos.",
+      "Este projeto foi desenvolvido com o objetivo de tornar o acesso às Escrituras mais prático e inclusivo. O site conta com todos os livros da Bíblia organizados de forma intuitiva, além de uma seção de versículos por tema para facilitar o estudo. Inclui também uma área com vídeos explicativos, sistema de leitura por voz, suporte em Libras, e um recurso de anotações que permite salvar notas em PDF ou diretamente no próprio site.\n\nAtualmente, o projeto está pausado, pois foi criado em uma fase em que eu ainda estava em processo de aprendizado. No futuro, pretendo redesenvolvê-lo com uma abordagem mais moderna e eficiente, aproveitando o conhecimento e as habilidades que adquiri desde então.",
     tecnologias: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js"],
     deploy: "https://bibliavirtual.netlify.app",
     github: "https://github.com/seuusuario/bibliavirtual",
   },
+  
   2: {
     titulo: "Site Institucional - ASSTJ ",
     imagem: "/assets/img/",
