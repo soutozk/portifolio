@@ -365,7 +365,7 @@ h3 {
 }
 
 header {
-  display: block;
+  display: flex;
   padding: 10px;
   position: fixed;
   width: 100%;
