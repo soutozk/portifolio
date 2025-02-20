@@ -15,7 +15,6 @@ setTimeout(function () {
 setTimeout(function () {
   document.querySelector(".start-animation").style.display = "none"; // Esconde a animação
   document.querySelector(".container-home").style.display = "flex";
-  document.querySelector("footer").style.display = "flex"; // Reexibe o footer
   document.querySelector("header").style.display = "flex"; // Reexibe o footer
 
   document.querySelector(".container-home").style.opacity = 1;

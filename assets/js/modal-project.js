@@ -62,6 +62,14 @@ const projetos = {
   },
 };
 
+// Fechar modal ao clicar fora do conteúdo
+document.getElementById("modal").addEventListener("click", function (event) {
+  const modalContent = document.getElementById("modal-content");
+  if (!modalContent.contains(event.target)) {
+    closeModal();
+  }
+});
+
 // Função para abrir o modal
 function openModal(projetoID) {
   const projeto = projetos[projetoID];
