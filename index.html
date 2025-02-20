@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/assets/css/landing.css" />
     <link rel="stylesheet" href="/assets/css/scroll.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
   </head>
   <body>
     <header>
@@ -20,7 +21,17 @@
       </button>
       <h1 class="title-header">Gabriel Souto</h1>
     </header>
-
+    <div id="sidebar" class="sidebar">
+      <button id="close-btn"><i class="fas fa-times"></i></button>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>    
     <div class="start-animation">
       <svg viewBox="0 0 500 100">
         <text x="50%" y="50%" text-anchor="middle" dy=".35em" font-size="70">
@@ -29,7 +40,7 @@
       </svg>
     </div>
     <header></header>
-    <main class="container-home">
+    <main class="container-home" id="inicio">
       <div class="container-top animated animatedFadeInUp fadeInUp">
         <div class="text-home-top">
           <h1>Gabriel Souto</h1>
@@ -60,7 +71,7 @@
         </div>
       </div>
 
-      <div class="container-projects">
+      <div class="container-projects" id="projetos">
         <div class="projects-title">
           <h1>Projetos</h1>
         </div>
@@ -193,7 +204,7 @@
         </div>
       </div>
 
-      <section class="contact-section">
+      <section class="contact-section" id="contato">
         <div class="container">
           <!-- Serviços oferecidos à esquerda -->
           <div class="services-text">
@@ -283,5 +294,6 @@
     <script src="/assets/js/carrosel.js"></script>
     <script src="/assets/js/modal-project.js"></script>
     <script src="/assets/js/modal-contact.js"></script>
+    <script src="/assets/js/sidebar.js"></script>
   </body>
 </html>

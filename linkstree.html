@@ -11,15 +11,26 @@
     />
     <link rel="stylesheet" href="/assets/css/pagelinks.css" />
     <link rel="stylesheet" href="/assets/css/scroll.css" />
+    <link rel="stylesheet" href="/assets/css/sidebar.css">
   </head>
   <body>
     <header>
       <button id="toggle-btn">
         <i class="fas fa-bars"></i>
       </button>
-      <h1 class="title-header">Gabriel Souto</h1>
+      <!-- <h1 class="title-header">Gabriel Souto</h1> -->
     </header>
-
+    <div id="sidebar" class="sidebar">
+      <button id="close-btn"><i class="fas fa-times"></i></button>
+      <nav>
+        <ul>
+          <li><a href="/index.html#inicio">Início</a></li>
+          <li><a href="/index.html#projetos">Projetos</a></li>
+          <li><a href="/index.html#sobre">Sobre</a></li>
+          <li><a href="/index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>    
       <div class="container-projects">
         <div class="projects-title">
           <h1>Links Bio</h1>
@@ -118,5 +129,6 @@
     <script src="/assets/js/carrosel.js"></script>
     <script src="/assets/js/modal-project.js"></script>
     <script src="/assets/js/modal-contact.js"></script>
+    <script src="/assets/js/sidebar.js"></script>
   </body>
 </html>
