@@ -1,8 +1,8 @@
 .sidebar {
     position: fixed;
     top: 10vh;
-    left: -250px; 
-    width: 250px;
+    left: -200px; 
+    width: 200px;
     height: 40%;
     background-color: #111;
     box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.5);
@@ -12,6 +12,7 @@
     align-items: center;
     padding-top: 50px;
     z-index: 1000;
+    border-radius: 15%;
   }
   
   .sidebar nav ul {
