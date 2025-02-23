@@ -68,6 +68,10 @@ main {
   margin: 0;
 }
 
+.text-home-top span {
+  color: #4a8ccf;
+}
+
 .text-home-top p {
   width: 80%;
   font-size: 20px;
@@ -200,7 +204,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 28rem;  
+  gap: 28rem;
 }
 
 .services-text,
@@ -399,11 +403,40 @@ header {
 
 /* Para telas menores que 768px (por exemplo, tablets) */
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .text-home-top {
     width: 100%;
+    padding-bottom: 5vh;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .text-home-top h1 {
+    width: 80%;
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .text-home-top p {
+    width: 80%;
+    font-size: 20px;
+    margin: 0;
+    text-align: justify;
+  }
+
+  .image-top-home {
+    display: none;
   }
 
   .container-top {
+    width: 100%;
+    padding-top: 15vh;
     flex-direction: column;
     height: auto;
   }
