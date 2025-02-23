@@ -458,8 +458,8 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     padding: 1rem;
     margin: 3%;
-    width: 80%;
-    height: 250px;
+    width: 85%;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
