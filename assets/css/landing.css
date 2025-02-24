@@ -83,6 +83,7 @@ main {
   width: 100%;
   max-height: 480px;
   transform: rotate(20deg);
+  animation: floatAnimation 3s ease-in-out infinite;
 }
 
 .carroseul-icons {
@@ -105,7 +106,7 @@ main {
 }
 
 .container-projects {
-  width: 90%;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: center;
@@ -113,6 +114,7 @@ main {
   flex-direction: column;
   background-color: #111111;
   margin-bottom: 15vh;
+  margin: 0;
 }
 
 .projects-title {
@@ -121,6 +123,7 @@ main {
   display: flex;
   align-self: center;
   justify-content: center;
+  padding: 0;
 }
 
 .projects-title h1 {
